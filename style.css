@@ -1,0 +1,84 @@
+body {
+  background-image: linear-gradient(to top, #0f1c31, #e4dcda);
+}
+/* spiner */
+#loading {
+  width: 4rem;
+  height: 4rem;
+  border: 8px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+#loading.display {
+  visibility: visible;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*  */
+.my_photo {
+  display: flex;
+  border-radius: 50%;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+.my_name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+}
+.my_repositories {
+  margin-bottom: 100px;
+}
+.repositories {
+  display: table;
+  flex-direction: column;
+  /* max-width: 450px; */
+  font-size: 26px;
+  line-height: 18px;
+  list-style: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.commit_text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+}
+/* .commit-text.show {
+  display: block;
+} */
+.lorem {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+
+  /* width: 250px; */
+  left: 800px;
+  margin-right: 150px;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
